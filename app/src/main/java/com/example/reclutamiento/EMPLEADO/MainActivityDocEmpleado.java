@@ -56,7 +56,7 @@ public class MainActivityDocEmpleado extends AppCompatActivity {
         setContentView(R.layout.activity_main_doc_empleado);
         //variables que se reviben del activity anterior
         Bundle global = getIntent().getExtras();
-        id_usuario = "1"; //global.getString("id");
+        id_usuario = "2g"; //global.getString("id");
         tag = global.getString("tag");
         //obtencion de id
         edtxtcedula=findViewById(R.id.edtxtcedula);
