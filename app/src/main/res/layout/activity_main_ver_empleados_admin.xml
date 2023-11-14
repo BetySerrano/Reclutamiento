@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.MainActivityVerPostulantes_admin">
+
+    <TextView
+        android:id="@+id/tituloveremp"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="97dp"
+        android:text="Búsqueda de Empleados"
+        android:textColor="#151414"
+        android:textSize="23sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/txtbuscaempleados"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/tituloveremp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="49dp"
+        android:layout_marginTop="36dp"
+        android:layout_marginEnd="14dp"
+        android:layout_toStartOf="@+id/imgbtnbuscapostulante"
+        android:hint="Ver lista de empleados"
+        android:textColor="#040404"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnbuscaempleados"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tituloveremp"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="97dp"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="535dp"
+        android:layout_below="@+id/txtbuscaempleados"
+        android:layout_marginTop="26dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <ListView
+                android:id="@+id/listEmpleados"
+                android:layout_width="match_parent"
+                android:layout_height="533dp" />
+        </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

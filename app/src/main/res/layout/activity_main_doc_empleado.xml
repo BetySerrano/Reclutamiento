@@ -1,0 +1,342 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".EMPLEADO.MainActivityDocEmpleado">
+
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="39dp"
+        android:text="Elige un empleado para subir sus documentos"
+        android:textColor="#252424"
+        android:textSize="18sp"
+        tools:layout_editor_absoluteX="157dp"
+        tools:layout_editor_absoluteY="102dp" />
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="628dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtcedula"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="Cedula"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpencedula"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxttitulo"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="Titulo"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpentitulo"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtIne"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="INE"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpenIne"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtcurp"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="CURP"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpencurp"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtactanac"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="Acta nacimiento"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpenactanac"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtNoseguro"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="No. seguro"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpenNoseguro"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtcartilla"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="Cartilla"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpencartilla"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtComprobanteDom"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="C.Domicilio"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpenComprobanteDom"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtantecedentes"
+                    android:layout_width="110dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="35dp"
+                    android:layout_weight="0.95"
+                    android:hint="A.No penales"
+                    android:textColor="#252424"
+                    android:textSize="10sp" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnOpenantecedentes"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="0dp"
+                android:layout_weight="1"
+                android:gravity="center"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtnUpArchivos"
+                    android:layout_width="163dp"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="@android:drawable/ic_menu_upload" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnguardardocs"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="10dp"
+                    android:layout_weight="0.95"
+                    app:srcCompat="@android:drawable/ic_menu_save" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

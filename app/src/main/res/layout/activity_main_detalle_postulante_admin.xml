@@ -1,0 +1,297 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.MainActivityDetallePostulante_admin">
+
+    <TextView
+        android:id="@+id/nuevopostulante"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="97dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="97dp"
+        android:text="Postulante"
+        android:textColor="#151414"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/txtaddempleado"
+        android:layout_width="196dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/nuevopostulante"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="12dp"
+        android:layout_toStartOf="@+id/imgbtnbuscapostulante"
+        android:hint="Agregar como empleado"
+        android:textColor="#040404"
+        android:textSize="16sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnagregarempleado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nuevopostulante"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        app:srcCompat="@android:drawable/ic_menu_add" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="125dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/imgbtnfechaingresopos"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:gravity="left"
+                    app:srcCompat="@android:drawable/ic_menu_month" />
+
+                <EditText
+                    android:id="@+id/txtfechaingresopos"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="60dp"
+                    android:hint="Fecha ingreso" />
+            </LinearLayout>
+
+            <EditText
+                android:id="@+id/txttipousuario"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Elige Administrador o Empleado" />
+
+            <EditText
+                android:id="@+id/txtnombrepos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Nombre" />
+
+            <EditText
+                android:id="@+id/txtapPaternopos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Apellido paterno" />
+
+            <EditText
+                android:id="@+id/txtapMaternopos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Apellido Materno" />
+
+            <EditText
+                android:id="@+id/txtfechanacpos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Fecha de nacimiento" />
+
+            <EditText
+                android:id="@+id/txtcallepos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Calle" />
+
+            <EditText
+                android:id="@+id/txtNumIntpos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Número interior"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtNumExtpos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtNoIntpostulante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Número Exterior"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtCPpos"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="Código Postal"
+                android:inputType="number" />
+
+
+            <EditText
+                android:id="@+id/txtcoloniapos"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Colonia"/>
+
+            <EditText
+                android:id="@+id/txtmunicipiopos"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Municipio" />
+
+            <EditText
+                android:id="@+id/txtestadopos"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Estado" />
+
+            <EditText
+                android:id="@+id/txtnumeropos"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:ems="10"
+                android:hint="Número telefonico"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/txtemailpos"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txttelpostulante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:ems="10"
+                android:hint="Email"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/txtsexopos"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Sexo" />
+
+            <EditText
+                android:id="@+id/txtedocivilpos"
+                android:layout_width="277dp"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Estado civil" />
+
+            <TextView
+                android:id="@+id/txtareapost"
+                android:layout_width="280dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:text="Área"
+                android:textColor="#252424"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtareapos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Área" />
+
+            <TextView
+                android:id="@+id/txtvacantepos"
+                android:layout_width="280dp"
+                android:layout_height="36dp"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:text="Vacante para la que postula"
+                android:textColor="#252424"
+                android:textSize="18sp" />
+
+            <EditText
+                android:id="@+id/txtpuestopos"
+                android:layout_width="280dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Puesto" />
+
+        </LinearLayout>
+    </ScrollView>
+</RelativeLayout>

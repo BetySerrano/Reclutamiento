@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string-array name="listaContrato">
+        <item>1er contrato de prueba 30 días</item>
+        <item>2do contrato de prueba 60 días</item>
+        <item>3er contrato de prueba 90 días</item>
+        <item>4to contrato indeterminado</item>
+    </string-array>
+
+    <string-array name="Sexo">
+        <item>Seleccione</item>
+        <item>Femenino</item>
+        <item>Masculino</item>
+    </string-array>
+
+    <string-array name="EleccionProceso">
+        <item>Inactivo</item>
+        <item>Espera</item>
+        <item>Fin de proceso</item>
+        <item>Concluido</item>
+    </string-array>
+
+    <string-array name="EstadoCilvil">
+        <item>Seleccione</item>
+        <item>Soltero/a</item>
+        <item>Casado/a</item>
+        <item>Divorciado/a</item>
+        <item>Separación en proceso judicial</item>
+        <item>Viudo/a</item>
+    </string-array>
+
+</resources>

@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySubMenu_empleado">
+
+
+    <ImageView
+        android:id="@+id/imgdocemp"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgcomentarios"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="14dp"
+        android:layout_marginTop="230dp"
+        app:srcCompat="@drawable/expediente" />
+
+    <Button
+        android:id="@+id/btndocumentos"
+        android:layout_width="291dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comentarios"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="225dp"
+        android:layout_marginEnd="33dp"
+        android:onClick="DocEmpleado"
+        android:text="Documentos del empleado" />
+
+
+
+</RelativeLayout>

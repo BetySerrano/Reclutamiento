@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.MainActivitySustitucion">
+
+    <TextView
+        android:id="@+id/textocarga"
+        android:layout_width="wrap_content"
+        android:layout_height="45dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="50dp"
+        android:text="Carga formato"
+        android:textAlignment="center"
+        android:textColor="#252424"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="153dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="40dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <ImageView
+        android:id="@+id/imgdocument"
+        android:layout_width="108dp"
+        android:layout_height="134dp"
+        android:layout_below="@+id/textocarga"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="152dp"
+        android:layout_marginTop="65dp"
+        android:layout_marginEnd="152dp"
+        android:scrollbarStyle="outsideInset"
+        android:textDirection="firstStrong"
+        app:srcCompat="@drawable/document" />
+
+    <ImageView
+        android:id="@+id/imgupload"
+        android:layout_width="48dp"
+        android:layout_height="42dp"
+        android:layout_below="@+id/imgdocument"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="106dp"
+        android:layout_marginTop="-41dp"
+        app:srcCompat="@drawable/upload" />
+
+    <ImageButton
+        android:id="@+id/imgbtnArchivosustitucion"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imgdocument"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="44dp"
+        android:layout_marginEnd="231dp"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnSubirsustitucion"
+        android:layout_width="71dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/imgdocument"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="42dp"
+        android:layout_marginEnd="131dp"
+        app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <TextView
+        android:id="@+id/txtfilesusutitucion"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/imgbtnArchivosustitucion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="28dp" />
+
+
+</RelativeLayout>

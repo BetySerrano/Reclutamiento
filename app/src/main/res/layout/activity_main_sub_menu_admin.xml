@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivitySubMenu_admin">
+
+    <ImageView
+        android:id="@+id/imgempleo"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/addempleo" />
+
+    <Button
+        android:id="@+id/formvacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="addVacante"
+        android:text="@string/addvacante" />
+
+    <ImageView
+        android:id="@+id/imgpostulante"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgempleo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="21dp"
+        app:srcCompat="@drawable/postulante" />
+
+    <Button
+        android:id="@+id/btnpostulante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formvacante"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="82dp"
+        android:layout_marginTop="18dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="addPostulante"
+        android:text="Listado de postulantes" />
+
+    <ImageView
+        android:id="@+id/imgvacante"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgpostulante"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="21dp"
+        android:layout_marginTop="20dp"
+        app:srcCompat="@drawable/addvacante" />
+
+    <Button
+        android:id="@+id/isAddEmpleo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnpostulante"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="addEmpleo"
+        android:text="@string/addempleo" />
+
+    <ImageView
+        android:id="@+id/imgrenovacion"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@id/imgvacante"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/renovacion" />
+
+    <Button
+        android:id="@+id/renovacion"
+        android:layout_width="286dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/isAddEmpleo"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="renovacioncontrato"
+        android:text="Renovación de contrato" />
+
+
+    <ImageView
+        android:id="@+id/imgbaja"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgrenovacion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/baja" />
+
+    <Button
+        android:id="@+id/baja"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/renovacion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="bajacolaborador"
+        android:text="Baja de colaborador" />
+
+
+    <ImageView
+        android:id="@+id/imgherramientas"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgbaja"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@drawable/herramientas" />
+
+    <Button
+        android:id="@+id/btnherramientas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/baja"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="80dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="registroHerramienta"
+        android:text="Registro de herramientas" />
+
+</RelativeLayout>

@@ -1,0 +1,246 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RECLUTAMIENTO.MainActivityLigasReclutamiento">
+
+     <TextView
+        android:id="@+id/Ligas"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="Ligas de reclutamiento"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp" />
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <EditText
+        android:id="@+id/txtbuscaIDliga"
+        android:layout_width="75dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ligas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="93dp"
+        android:layout_marginTop="10dp"
+        android:hint="ID"
+        android:inputType="number"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnbuscaliga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ligas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="169dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imgbtnModificaliga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ligas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="103dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imgbtnEliminaliga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ligas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="37dp"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/imgbtnAddliga"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Ligas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="26dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="135dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnfecharegistro"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="18dp"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <EditText
+                android:id="@+id/edtxtfechaRegistro"
+                android:layout_width="197dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="19dp"
+                android:layout_marginEnd="69dp"
+                android:ems="10"
+                android:hint="Fecha de registro"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnfechacontacto"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="12dp"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <EditText
+                android:id="@+id/edtxtfechaContacto"
+                android:layout_width="194dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="21dp"
+                android:layout_marginEnd="72dp"
+                android:ems="10"
+                android:hint="Fecha de contacto"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageButton
+                android:id="@+id/btnfechaentrevista"
+                android:layout_width="72dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="14dp"
+                app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+            <EditText
+                android:id="@+id/edtxtfechaEntrevista"
+                android:layout_width="198dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="25dp"
+                android:layout_marginEnd="70dp"
+                android:ems="10"
+                android:hint="Fecha de entrevista"
+                android:inputType="date" />
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/linkPruebas"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="24dp"
+            android:layout_marginEnd="70dp"
+            android:text="Liga a página de pruebas psicométricas"
+            android:textAlignment="textStart"
+            android:textColor="#252424"
+            android:textSize="18sp" />
+
+        <EditText
+        android:id="@+id/edtxtliga"
+        android:layout_width="281dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="ingresa liga" />
+
+    <Button
+        android:id="@+id/btnguardaliga"
+        android:layout_width="279dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="72dp"
+        android:text="Guardar" />
+
+        <EditText
+            android:id="@+id/edtxtemailpos"
+            android:layout_width="281dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="70dp"
+            android:ems="10"
+            android:hint="email del postulante" />
+
+        <LinearLayout
+            android:layout_width="364dp"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/txtenlacealta"
+                android:layout_width="215dp"
+                android:layout_height="73dp"
+                android:layout_gravity="left"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:ems="10"
+                android:hint="link de alta"
+                android:text="http://192.168.0.15/webServiceConn/FormPostulante.php" />
+
+            <ImageButton
+                android:id="@+id/envairmail"
+                android:layout_width="74dp"
+                android:layout_height="match_parent"
+                android:layout_gravity="right"
+                android:layout_marginEnd="80dp"
+                app:srcCompat="@android:drawable/ic_menu_send" />
+
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/listligas"
+            android:layout_width="match_parent"
+            android:layout_height="101dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginEnd="60dp" />
+
+
+    </LinearLayout>
+    </ScrollView>
+
+</RelativeLayout>

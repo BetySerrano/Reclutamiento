@@ -1,0 +1,68 @@
+plugins {
+    id 'com.android.application'
+    id 'com.google.gms.google-services'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.2"
+    useLibrary 'org.apache.http.legacy'
+
+    defaultConfig {
+        applicationId "com.example.reclutamiento"
+        minSdkVersion 23
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
+
+repositories{
+    maven{
+        url "http://dl.bintray.com/lukaville/maven"
+    }
+}
+
+dependencies {
+
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation 'com.google.android.material:material:1.2.1'
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation 'com.google.firebase:firebase-auth:20.0.1'
+    //carga de archivos
+    implementation 'com.google.firebase:firebase-storage:19.2.1'
+    implementation 'com.google.firebase:firebase-database:19.6.0'
+    testImplementation 'junit:junit:4.+'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.2'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.3.0'
+    //libreria volley para el registro
+    implementation 'com.android.volley:volley:1.1.0'
+    //importando el BOM para la plataforma de firebase
+    implementation platform('com.google.firebase:firebase-bom:26.0.0')
+    //
+    implementation 'com.squareup.okhttp3:okhttp:3.8.0'
+
+    //implementation 'com.nbsp:materialfilepicker:1.9.1'
+
+    //compile 'com.squareup.okhttp3:okhttp:3.3.1'
+    implementation 'com.nbsp:library:1.09'
+
+    //dependencias para usar AsyncHttpClient
+    implementation 'com.loopj.android:android-async-http:1.4.9'
+    implementation 'cz.msebera.android:httpclient:4.4.1.2'
+    //deserealizar Json
+    implementation 'com.google.code.gson:gson:2.8.5'
+}

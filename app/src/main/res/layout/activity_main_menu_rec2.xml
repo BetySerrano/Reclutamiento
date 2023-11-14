@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivityMenuRec2">
+
+    <ImageView
+        android:id="@+id/imgligas"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgempleo"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="100dp"
+        app:srcCompat="@drawable/reclutamiento" />
+
+
+    <Button
+        android:id="@+id/btnligas"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="86dp"
+        android:layout_marginTop="100dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="ligasReclutamiento"
+        android:text="Ligas de reclutamiento" />
+
+
+    <ImageView
+        android:id="@+id/imgcomentarios"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgligas"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="15dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/comentarios" />
+
+    <Button
+        android:id="@+id/comentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/btnligas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="83dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="Comentarios"
+        android:text="Comentarios de entrevistas" />
+
+    <ImageView
+        android:id="@+id/imgprogramacion"
+        android:layout_width="51dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/imgcomentarios"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="19dp"
+        android:layout_marginTop="25dp"
+        app:srcCompat="@drawable/programacion" />
+
+    <Button
+        android:id="@+id/programacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comentarios"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="36dp"
+        android:onClick="Programacion"
+        android:text="Programación estudio socioeconómico" />
+
+
+</RelativeLayout>

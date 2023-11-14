@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/formAddVacante"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.MainActivityAddVacante_admin">
+
+    <TextView
+        android:id="@+id/Vacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="40dp"
+        android:text="Vacante/empleo"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="40dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="631dp"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <EditText
+                android:id="@+id/txtvacante"
+                android:layout_width="332dp"
+                android:layout_height="57dp"
+                android:layout_below="@+id/Vacante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="28dp"
+                android:hint="Titulo de vacante" />
+
+            <EditText
+                android:id="@+id/txtpuesto"
+                android:layout_width="332dp"
+                android:layout_height="59dp"
+                android:layout_below="@+id/txtvacante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:hint="Puesto vacante" />
+
+            <EditText
+                android:id="@+id/txtDescripcion"
+                android:layout_width="333dp"
+                android:layout_height="58dp"
+                android:layout_below="@+id/txtpuesto"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Descripción"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/txtsueldo"
+                android:layout_width="335dp"
+                android:layout_height="58dp"
+                android:layout_below="@+id/txtDescripcion"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:ems="10"
+                android:gravity="start|top"
+                android:hint="Sueldo" />
+
+            <EditText
+                android:id="@+id/txtprestacionvacante"
+                android:layout_width="335dp"
+                android:layout_height="58dp"
+                android:layout_below="@+id/txtsueldo"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:hint="Prestaciones" />
+
+            <EditText
+                android:id="@+id/txthorario"
+                android:layout_width="335dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtprestacionvacante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:hint="Horario" />
+
+            <EditText
+                android:id="@+id/txtdias"
+                android:layout_width="336dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txthorario"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="28dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="28dp"
+                android:hint="Dias laborables" />
+
+            <Button
+                android:id="@+id/btnvacante"
+                android:layout_width="281dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtdias"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginEnd="60dp"
+                android:text="Guardar vacante" />
+
+            <Button
+                android:id="@+id/btnsus"
+                android:layout_width="279dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/btnvacante"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="5dp"
+                android:layout_marginEnd="60dp"
+                android:onClick="sustitucion"
+                android:text="sustitución" />
+        </LinearLayout>
+    </ScrollView>
+
+    <EditText
+        android:id="@+id/txtbuscaIDvacante"
+        android:layout_width="79dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vacante"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="95dp"
+        android:layout_marginTop="6dp"
+        android:hint="ID"
+        android:inputType="number"/>
+
+    <ImageButton
+        android:id="@+id/imgbtnbuscaVacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vacante"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="159dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imgbtnModificaVacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vacante"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="3dp"
+        android:layout_marginEnd="95dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imgbtnEliminaVacante"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Vacante"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="1dp"
+        android:layout_marginEnd="35dp"
+        app:srcCompat="@android:drawable/ic_menu_delete" />
+
+    <ImageButton
+        android:id="@+id/imgbtnAddvacante"
+        android:layout_width="48dp"
+        android:layout_height="43dp"
+        android:layout_below="@+id/Vacante"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="28dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@android:drawable/ic_input_add" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+</RelativeLayout>

@@ -1,0 +1,183 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RECLUTAMIENTO.MainActivityRegistroHerramienta">
+
+
+    <TextView
+        android:id="@+id/Herramienta"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="Asignación de Herramienta"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="7dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="100dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/textoHerramienta"
+                android:layout_width="307dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/Herramienta"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="45dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="44dp"
+                android:text="Elige a un empleado para la asignación de herramientas"
+                android:textColor="#252424"
+                android:textSize="18sp" />
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <EditText
+                    android:id="@+id/edtxtID"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="left"
+                    android:layout_marginStart="60dp"
+                    android:hint="ID empleado" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnbuscaID"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="10dp"
+                    android:gravity="center_horizontal"
+                    app:srcCompat="@android:drawable/ic_menu_search" />
+
+                <ImageButton
+                    android:id="@+id/imgbtnverID"
+                    android:layout_width="60dp"
+                    android:layout_height="wrap_content"
+                    android:gravity="right"
+                    app:srcCompat="@android:drawable/ic_menu_view" />
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/txtnombreID"
+                android:layout_width="286dp"
+                android:layout_height="48dp"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="63dp"
+                android:layout_marginTop="14dp" />
+
+            <EditText
+                android:id="@+id/txtnomHerramienta"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/spempleadoherramienta"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Nombre de la herramienta" />
+
+
+            <EditText
+                android:id="@+id/txtunidadHerramienta"
+                android:layout_width="276dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/txtnomHerramienta"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="60dp"
+                android:hint="Unidad"
+                android:inputType="number" />
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnfechaEntrega"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:gravity="left"
+                    app:srcCompat="@android:drawable/ic_menu_month" />
+
+                <EditText
+                    android:id="@+id/dateEntrega"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="60dp"
+                    android:hint="Entrega empleado" />
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:layout_width="353dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btnfechaEntregaRH"
+                    android:layout_width="71dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="60dp"
+                    android:gravity="left"
+                    app:srcCompat="@android:drawable/ic_menu_month" />
+
+                <EditText
+                    android:id="@+id/dateEntregaRH"
+                    android:layout_width="200dp"
+                    android:layout_height="match_parent"
+                    android:layout_gravity="right"
+                    android:layout_marginEnd="60dp"
+                    android:hint="Entrega empresa" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnguardaherramienta"
+                android:layout_width="278dp"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/dateEntregaRH"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentEnd="true"
+                android:layout_marginStart="60dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="60dp"
+                android:text="Guardar" />
+
+
+        </LinearLayout>
+    </ScrollView>
+
+
+</RelativeLayout>

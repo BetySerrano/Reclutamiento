@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Reclutamiento</string>
+    <string name="envionotificacion">Envio de notificaciones</string>
+    <string name="addvacante">Nueva vacante</string>
+    <string name="addempleo">Listado de empleados</string>
+    <string name="renovacion">Renovación de contrato</string>
+    <string name="eligeEmp">Elige empleado:</string>
+</resources>

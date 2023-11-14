@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RECLUTAMIENTO.MainActivityComentarios">
+
+    <TextView
+        android:id="@+id/comentarios"
+        android:layout_width="176dp"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="Comentarios"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/formatos"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtnombreproceso"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="85dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="43dp"
+        android:text="Formato  de comentarios"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <TextView
+        android:id="@+id/continua"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfile"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="44dp"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="76dp"
+        android:text="Estado del proceso"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <ProgressBar
+        android:id="@+id/progresscomen"
+        android:visibility="gone"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="100dp"
+        android:layout_marginTop="250dp"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/btnenviacomentarios"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxtfechafinpro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="55dp"
+        android:text="Enviar comentarios" />
+
+    <ImageButton
+        android:id="@+id/imgbtnUploadComen"
+        android:layout_width="57dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/formatos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="89dp"
+        android:layout_marginTop="9dp"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="42dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/txtnombreproceso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="7dp"
+        app:srcCompat="@drawable/upload" />
+
+    <Spinner
+        android:id="@+id/spProceso"
+        android:layout_width="310dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/continua"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="56dp"
+        android:entries="@array/EleccionProceso" />
+
+    <Button
+        android:id="@+id/btnsubir"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/formatos"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="111dp"
+        android:text="Subir" />
+
+    <TextView
+        android:id="@+id/txtfile"
+        android:layout_width="302dp"
+        android:layout_height="46dp"
+        android:layout_below="@+id/btnsubir"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="43dp"
+        android:layout_marginTop="5dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnfechaIniProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spProceso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="5dp"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <EditText
+        android:id="@+id/edtxtFechaInicioPro"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spProceso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="145dp"
+        android:layout_marginTop="6dp"
+        android:hint="Fecha de inicio" />
+
+    <ImageButton
+        android:id="@+id/imgbtnfechafinProceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtnfechaIniProceso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="48dp"
+        android:layout_marginTop="3dp"
+        app:srcCompat="@android:drawable/ic_menu_my_calendar" />
+
+    <EditText
+        android:id="@+id/edtxtfechafinpro"
+        android:layout_width="207dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxtFechaInicioPro"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="144dp"
+        android:layout_marginTop="6dp"
+        android:hint="Fecha de Fin" />
+
+    <EditText
+        android:id="@+id/edtxtidproceso"
+        android:layout_width="180dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comentarios"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="45dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="185dp"
+        android:hint="ID postulante"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/imgbtnbusidproceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/comentarios"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="113dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/txtnombreproceso"
+        android:layout_width="302dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtxtidproceso"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="9dp" />
+
+</RelativeLayout>

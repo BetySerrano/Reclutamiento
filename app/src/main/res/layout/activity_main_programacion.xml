@@ -1,0 +1,200 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RECLUTAMIENTO.MainActivityProgramacion">
+
+    <TextView
+        android:id="@+id/Programacion"
+        android:layout_width="wrap_content"
+        android:layout_height="102dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="60dp"
+        android:text="Programación de estudio socioeconómico"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <EditText
+        android:id="@+id/edtxtidprogramacionpos"
+        android:layout_width="152dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/Programacion"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="65dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="194dp"
+        android:hint="ingresa ID" />
+
+    <ImageButton
+        android:id="@+id/imgbtnbuscapostulantepro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Programacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="119dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <ImageButton
+        android:id="@+id/imgbtnverpro"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/Programacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="59dp"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <TextView
+        android:id="@+id/txtnombrepostulantepro"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtxtidprogramacionpos"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="63dp"
+        android:layout_marginTop="14dp" />
+
+
+    <TextView
+        android:id="@+id/txtcarga"
+        android:layout_width="wrap_content"
+        android:layout_height="60dp"
+        android:layout_below="@+id/txtnombrepostulantepro"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="62dp"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="157dp"
+        android:text="Subir fotografías"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnfotos"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcarga"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-57dp"
+        android:layout_marginEnd="108dp"
+        app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+    <ImageButton
+        android:id="@+id/imgbtnSubirfotos"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtnombrepostulantepro"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="52dp"
+        app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <TextView
+        android:id="@+id/txtformato"
+        android:layout_width="wrap_content"
+        android:layout_height="57dp"
+        android:layout_below="@+id/imgbtnfotos"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="166dp"
+        android:text="Subir Documentos"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnexpediente"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtformato"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="-52dp"
+        android:layout_marginEnd="111dp"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnSubirexpediente"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/imgbtnSubirfotos"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="52dp"
+        app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <TextView
+        android:id="@+id/txtfiledocs"
+        android:layout_width="286dp"
+        android:layout_height="40dp"
+        android:layout_below="@+id/imgbtnSubirexpediente"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="57dp"
+        android:layout_marginTop="4dp" />
+
+    <EditText
+        android:id="@+id/editTextDate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfiledocs"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="143dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:hint="fecha de visita"
+        android:inputType="date" />
+
+    <EditText
+        android:id="@+id/editTextTallas"
+        android:layout_width="283dp"
+        android:layout_height="64dp"
+        android:layout_below="@+id/editTextDate"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="64dp"
+        android:ems="10"
+        android:inputType="textMultiLine"
+        android:hint="ingresa tallas" />
+
+    <Button
+        android:id="@+id/btnguardaProgramacion"
+        android:layout_width="253dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editTextTallas"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="78dp"
+        android:text="guardar" />
+
+    <ImageButton
+        android:id="@+id/imgbtnfechaproceso"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtfiledocs"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="12dp"
+        app:srcCompat="@android:drawable/ic_menu_agenda" />
+
+</RelativeLayout>

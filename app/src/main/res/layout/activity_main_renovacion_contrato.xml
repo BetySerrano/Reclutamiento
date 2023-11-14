@@ -1,0 +1,185 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ADMIN.MainActivityRenovacionContrato">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="60dp"
+        android:layout_marginTop="30dp"
+        android:layout_marginEnd="60dp"
+        android:text="@string/renovacion"
+        android:textAlignment="center"
+        android:textColor="#151414"
+        android:textSize="24sp"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:layout_editor_absoluteY="85dp" />
+
+    <ImageButton
+        android:id="@+id/imgbtnmenu"
+        android:layout_width="46dp"
+        android:layout_height="40dp"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="27dp"
+        android:layout_marginTop="30dp"
+        app:srcCompat="@android:drawable/ic_menu_sort_by_size" />
+
+    <TextView
+        android:id="@+id/empleado"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/textView"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="67dp"
+        android:layout_marginTop="24dp"
+        android:layout_marginEnd="73dp"
+        android:text="@string/eligeEmp"
+        android:textAlignment="textStart"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <EditText
+        android:id="@+id/edtxtidrenovacion"
+        android:layout_width="152dp"
+        android:layout_height="41dp"
+        android:layout_below="@+id/empleado"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="200dp"
+        android:hint="ingresa ID"
+        android:inputType="number" />
+
+    <ImageButton
+        android:id="@+id/imgbtnbuscarenovacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/empleado"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="2dp"
+        android:layout_marginEnd="105dp"
+        app:srcCompat="@android:drawable/ic_menu_search" />
+
+    <TextView
+        android:id="@+id/txtnombrerenovacion"
+        android:layout_width="286dp"
+        android:layout_height="48dp"
+        android:layout_below="@+id/edtxtidrenovacion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="10dp" />
+
+    <TextView
+        android:id="@+id/txtcaracteristicarenovacion"
+        android:layout_width="299dp"
+        android:layout_height="44dp"
+        android:layout_below="@+id/txtnombrerenovacion"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="53dp"
+        android:layout_marginTop="10dp" />
+
+
+    <ImageButton
+        android:id="@+id/imgbtnvercontrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcaracteristicarenovacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="151dp"
+        app:srcCompat="@android:drawable/ic_menu_view" />
+
+    <ImageButton
+        android:id="@+id/imgbtnModificacontrato"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcaracteristicarenovacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="81dp"
+        app:srcCompat="@android:drawable/ic_menu_edit" />
+
+    <ImageButton
+        android:id="@+id/imgbtnarchivocontrato"
+        android:layout_width="43dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtcaracteristicarenovacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="7dp"
+        android:layout_marginEnd="305dp"
+        app:srcCompat="?android:attr/actionModeFindDrawable" />
+
+    <ImageButton
+        android:id="@+id/imgbtnSubircontrato"
+        android:layout_width="wrap_content"
+        android:layout_height="55dp"
+        android:layout_below="@+id/txtcaracteristicarenovacion"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="4dp"
+        android:layout_marginEnd="245dp"
+        app:srcCompat="@android:drawable/stat_sys_upload" />
+
+    <TextView
+        android:id="@+id/caracteristicas"
+        android:layout_width="258dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/imgbtnvercontrato"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="71dp"
+        android:layout_marginTop="14dp"
+        android:layout_marginEnd="68dp"
+        android:text="Caracteristicas:"
+        android:textAlignment="textStart"
+        android:textColor="#252424"
+        android:textSize="18sp" />
+
+    <Spinner
+        android:id="@+id/spCaracteristicas"
+        android:layout_width="285dp"
+        android:layout_height="45dp"
+        android:layout_below="@+id/caracteristicas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="55dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="71dp"
+        android:entries="@array/listaContrato" />
+
+    <Button
+        android:id="@+id/btnrenovar"
+        android:layout_width="264dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/edtxtvacaciones"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="69dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="70dp"
+        android:text="Renovar" />
+
+    <EditText
+        android:id="@+id/edtxtvacaciones"
+        android:layout_width="285dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spCaracteristicas"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginStart="52dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="70dp"
+        android:ems="10"
+        android:gravity="start|top"
+        android:inputType="number"
+        android:hint="Días de vacaciones"/>
+
+</RelativeLayout>

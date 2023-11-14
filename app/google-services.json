@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "261064183147",
+    "project_id": "reclutamiento-9ea32",
+    "storage_bucket": "reclutamiento-9ea32.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:261064183147:android:5edd0dae590667dd51502e",
+        "android_client_info": {
+          "package_name": "com.example.reclutamiento"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "261064183147-iu7h654lgmnsh3b8kih8hai9rju4pvcj.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBG2xxSVAhjbPGpuJA9DQFfpAZ7lyel-bg"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "261064183147-iu7h654lgmnsh3b8kih8hai9rju4pvcj.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
